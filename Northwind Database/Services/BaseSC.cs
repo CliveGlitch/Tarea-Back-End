@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Northwind_Database.Services
 {
-    class BaseSC
+    public class BaseSC
     {
         protected NORTHWNDContext dataContext = new NORTHWNDContext();
     }
