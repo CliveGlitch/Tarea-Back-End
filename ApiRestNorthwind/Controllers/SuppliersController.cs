@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Northwind_Database.DataAccess;
 using Northwind_Database.Models;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace ApiRestNorthwind.Controllers
 {
+    [EnableCors("foo")]
     [Route("api/[controller]")]
     [ApiController]
     public class SuppliersController : ControllerBase

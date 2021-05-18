@@ -7,11 +7,13 @@ using Northwind_Database.Services;
 using Northwind_Database.DataAccess;
 using Northwind_Database.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Cors;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ApiRestNorthwind.Controllers
 {
+    [EnableCors("foo")]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
